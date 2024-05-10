@@ -17,6 +17,9 @@ console.log(computer);
 let humanChoice = "";
 function getPlayerChoice() {
     humanChoice = window.prompt("What your choice rock, paper or scissors?").toLowerCase();
+    if (humanChoice != "rock" || humanChoice != "paper" || humanChoice != "scissors") {
+        humanChoice = window.prompt("You can enter only rock, paper or scissors!!!");
+    }
 }
 
 getPlayerChoice();
@@ -24,3 +27,7 @@ console.log(humanChoice);
 
 let humanScore = 0;
 let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+
+}
