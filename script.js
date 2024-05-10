@@ -14,3 +14,10 @@ function getComputerChoice() {
 let computer = getComputerChoice();
 console.log(computer);
 
+let humanChoice = "";
+function getPlayerChoice() {
+    humanChoice = window.prompt("What your choice rock, paper or scissors?").toLowerCase();
+}
+
+getPlayerChoice();
+console.log(humanChoice);
