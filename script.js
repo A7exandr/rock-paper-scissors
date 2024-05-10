@@ -13,3 +13,4 @@ function getComputerChoice() {
 
 let computer = getComputerChoice();
 console.log(computer);
+
