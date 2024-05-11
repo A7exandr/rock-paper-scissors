@@ -48,9 +48,30 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-const computerSelection = getComputerChoice();
+let computerSelection = getComputerChoice();
 console.log(computerSelection);
-const humanSelection = getPlayerChoice();
+let humanSelection = getPlayerChoice();
 console.log(humanSelection);
 playRound(humanSelection, computerSelection);
 
+computerSelection = getComputerChoice();
+console.log(computerSelection);
+humanSelection = getPlayerChoice();
+console.log(humanSelection);
+playRound(humanSelection, computerSelection);
+
+computerSelection = getComputerChoice();
+console.log(computerSelection);
+humanSelection = getPlayerChoice();
+console.log(humanSelection);
+playRound(humanSelection, computerSelection);
+
+console.log(`Player: ${humanScore} | Computer: ${computerScore}`);
+
+if (computerScore > humanScore) {
+    alert("You lose the game!" + ` With score ${humanScore} < ${computerScore}`);
+} else if (humanScore > computerScore) {
+    alert("You win the game!" + ` With score ${humanScore} > ${computerScore}`);
+} else {
+    alert(`Score is ${humanScore} : ${computerScore} so its dawn`);
+}
