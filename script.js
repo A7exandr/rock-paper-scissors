@@ -12,12 +12,14 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-    humanChoice = window.prompt("What your choice rock, paper or scissors?").toLowerCase();
-    if (humanChoice != "rock" || humanChoice != "paper" || humanChoice != "scissors") {
-        humanChoice = window.prompt("You can enter only rock, paper or scissors!!!");
+    let humanChoice = "";
+    humanChoice = window.prompt("What's your choice? Enter rock, paper, or scissors:").toLowerCase();
+    if (humanChoice !== "paper" && humanChoice !== "rock" && humanChoice && "scissors") {
+        humanChoice = window.prompt("You can choose only rock, paper or scissors!!!");
     }
     return humanChoice;
 }
+
 
 let humanScore = 0;
 let computerScore = 0;
