@@ -15,7 +15,7 @@ function getPlayerChoice() {
     let humanChoice = "";
     humanChoice = window.prompt("What's your choice? Enter rock, paper, or scissors:").toLowerCase();
     if (humanChoice !== "paper" && humanChoice !== "rock" && humanChoice && "scissors") {
-        humanChoice = window.prompt("You can choose only rock, paper or scissors!!!");
+        humanChoice = window.prompt("You can choose only rock, paper or scissors!!!").toLowerCase();
     }
     return humanChoice;
 }
